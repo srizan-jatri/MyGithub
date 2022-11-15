@@ -1,8 +1,6 @@
 plugins {
-    id("org.jetbrains.kotlin.android")
-    id("com.android.library")
-    id("hilt")
     plugin.scripts.`android-library`
+    id("hilt")
 }
 
 android {

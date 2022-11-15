@@ -82,6 +82,8 @@ dependencies {
 
     implementation("androidx.hilt:hilt-navigation-compose:1.0.0")
 
+    implementation("androidx.constraintlayout:constraintlayout-compose:1.0.1")
+
     // Optional - Integration with LiveData
     //implementation("androidx.compose.runtime:runtime-livedata")
     // Optional - Integration with RxJava
