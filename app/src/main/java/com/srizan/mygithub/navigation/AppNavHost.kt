@@ -5,7 +5,8 @@ import androidx.compose.ui.Modifier
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.rememberNavController
-import com.srizan.details.detailsScreen
+import com.srizan.details.navigation.detailsScreen
+import com.srizan.details.navigation.navigateToDetailsScreen
 import com.srizan.list.listScreen
 
 @Composable
@@ -21,11 +22,10 @@ fun AppNavHost(
         startDestination = startDestination
     ) {
         listScreen(
-            onRepoItemClick = {
-
+            onRepoItemClick = { userName ->
+                navController.navigateToDetailsScreen(userName)
             }
         )
-
         detailsScreen()
     }
 }

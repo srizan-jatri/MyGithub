@@ -4,34 +4,35 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.Surface
+import androidx.compose.foundation.layout.padding
+import androidx.compose.material3.*
 import androidx.compose.ui.Modifier
-import androidx.lifecycle.lifecycleScope
-import com.srizan.domain.usecase.UseCase
 import com.srizan.mygithub.navigation.AppNavHost
 import com.srizan.mygithub.ui.theme.MyGithubTheme
 import dagger.hilt.android.AndroidEntryPoint
-import javax.inject.Inject
 
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {
-    @Inject
-    lateinit var useCase: UseCase
+    @OptIn(ExperimentalMaterial3Api::class)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        lifecycleScope.launchWhenStarted {
-            println(useCase.invoke())
-        }
 
         setContent {
             MyGithubTheme {
-                // A surface container using the 'background' color from the theme
-                Surface(
+                Scaffold(
                     modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colorScheme.background
-                ) {
-                    AppNavHost()
+                    topBar = {
+                        TopAppBar(
+                            title = {
+                                Text(text = "My Github")
+                            }
+                        )
+                    }
+                ) { paddingValues ->
+                    AppNavHost(
+                        modifier = Modifier.padding(paddingValues)
+                    )
+
                 }
             }
         }

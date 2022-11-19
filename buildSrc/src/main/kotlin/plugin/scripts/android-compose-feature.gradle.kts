@@ -20,8 +20,7 @@ android {
         release {
             isMinifyEnabled = false
             proguardFiles(
-                getDefaultProguardFile("proguard-android-optimize.txt"),
-                "proguard-rules.pro"
+                getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro"
             )
         }
     }
@@ -41,6 +40,8 @@ android {
 }
 dependencies {
 
+    implementation(project(":domain"))
+    if (project.name != "common") implementation(project(":common"))
     val composeBom = platform("androidx.compose:compose-bom:2022.10.00")
     implementation(composeBom)
     androidTestImplementation(composeBom)
@@ -88,5 +89,8 @@ dependencies {
     //implementation("androidx.compose.runtime:runtime-livedata")
     // Optional - Integration with RxJava
     //implementation("androidx.compose.runtime:runtime-rxjava2")
+
+    implementation("io.coil-kt:coil:2.2.2")
+    implementation("io.coil-kt:coil-compose:2.2.2")
 
 }

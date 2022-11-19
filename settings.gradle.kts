@@ -14,11 +14,12 @@ dependencyResolutionManagement {
 }
 enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
 rootProject.name = "MyGithub"
-include ':app'
-include ':domain'
-include ':feature'
-include ':core:network'
-include ':core:database'
-include ':core:data'
-include ':feature:list'
-include ':feature:details'
+include(":app")
+include(":domain")
+include(":feature")
+include(":core:network")
+include(":core:database")
+include(":core:data")
+include(":feature:list")
+include(":feature:details")
+include(":common")
