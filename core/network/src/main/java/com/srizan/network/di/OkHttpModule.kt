@@ -19,7 +19,6 @@ object OkHttpModule {
     @Singleton
     fun provideLoggerInterceptor(): HttpLoggingInterceptor {
         val interceptor = HttpLoggingInterceptor { Timber.e(it) }
-        interceptor.apply { interceptor.level = HttpLoggingInterceptor.Level.HEADERS }
         interceptor.apply { interceptor.level = HttpLoggingInterceptor.Level.BODY }
         return interceptor
     }

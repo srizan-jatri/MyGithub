@@ -1,10 +1,12 @@
 package com.srizan.network.model
 
+import kotlinx.serialization.Serializable
+
+@Serializable
 data class GitHubUserNetworkModel(
     val login: String?,
     val avatar_url: String?,
     val name: String?,
-    val company: Any?,
     val blog: String?,
     val location: String?,
     val email: String?,

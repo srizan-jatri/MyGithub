@@ -1,5 +1,8 @@
 package com.srizan.network.model
 
+import kotlinx.serialization.Serializable
+
+@Serializable
 data class RepoNetworkModel(
     val id: Long?,
     val name: String?,
@@ -11,6 +14,7 @@ data class RepoNetworkModel(
     val language: String?
 )
 
+@Serializable
 data class Owner(
     val login: String?,
     val avatar_url: String?,

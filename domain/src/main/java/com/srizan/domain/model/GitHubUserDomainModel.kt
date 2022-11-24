@@ -4,7 +4,6 @@ data class GitHubUserDomainModel(
     val login: String,
     val avatarUrl: String,
     val name: String,
-    val company: Any,
     val blog: String,
     val location: String,
     val email: String,

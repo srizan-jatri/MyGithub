@@ -10,7 +10,6 @@ class GitHubUserNetworkToDomainMapper @Inject constructor() :
         login = type.login ?: "",
         avatarUrl = type.avatar_url ?: "",
         name = type.name ?: "",
-        company = type.company ?: "",
         blog = type.blog ?: "",
         location = type.location ?: "",
         email = type.email ?: "",
