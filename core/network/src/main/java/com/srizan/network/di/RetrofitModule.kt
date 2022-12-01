@@ -11,8 +11,8 @@ import kotlinx.serialization.ExperimentalSerializationApi
 import kotlinx.serialization.json.Json
 import okhttp3.MediaType.Companion.toMediaType
 import okhttp3.OkHttpClient
+import retrofit2.Converter
 import retrofit2.Retrofit
-
 import retrofit2.converter.gson.GsonConverterFactory
 import javax.inject.Singleton
 
@@ -20,17 +20,16 @@ import javax.inject.Singleton
 @InstallIn(SingletonComponent::class)
 object RetrofitModule {
 
-    @OptIn(ExperimentalSerializationApi::class)
     @Provides
     @Singleton
     fun provideRetrofit(
         okHttpClient: OkHttpClient,
-        factory: GsonConverterFactory
+        jsonConverterFactory: Converter.Factory
     ): Retrofit {
         return Retrofit.Builder()
             .baseUrl("https://api.github.com")
             .client(okHttpClient)
-            .addConverterFactory(Json.asConverterFactory("application/json".toMediaType()))
+            .addConverterFactory(jsonConverterFactory)
             .build()
     }
 
@@ -42,4 +41,16 @@ object RetrofitModule {
     @Provides
     @Singleton
     fun provideGson(): Gson = GsonBuilder().create()
+
+    @OptIn(ExperimentalSerializationApi::class)
+    @Provides
+    @Singleton
+    fun provideJsonConverterFactory(json: Json): Converter.Factory =
+        json.asConverterFactory("application/json".toMediaType())
+
+    @Provides
+    @Singleton
+    fun provideJson(): Json = Json {
+        ignoreUnknownKeys = true
+    }
 }

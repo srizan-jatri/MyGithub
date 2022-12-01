@@ -10,13 +10,14 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 
 @Composable
-fun ErrorScreen(onRefreshClick: () -> Unit = {}) {
+fun ErrorScreen(message: String, onRefreshClick: () -> Unit = {}) {
     Column(
         modifier = Modifier.fillMaxSize(),
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
         Text(text = "Error")
+        Text(text = message)
         Button(onClick = onRefreshClick) {
             Text(text = "Refresh")
         }

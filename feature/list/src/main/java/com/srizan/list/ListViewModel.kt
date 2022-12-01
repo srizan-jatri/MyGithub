@@ -31,7 +31,7 @@ class ListViewModel @Inject constructor(
         viewModelScope.launch {
             getRepoListUseCase.invoke().collect {
                 uiState = when (it) {
-                    is ApiResult.Error -> RepoListUIState.ErrorState
+                    is ApiResult.Error -> RepoListUIState.ErrorState(message = it.message)
                     is ApiResult.Loading -> RepoListUIState.LoadingState
                     is ApiResult.Success -> RepoListUIState.SuccessState(it.data)
                 }
@@ -42,7 +42,7 @@ class ListViewModel @Inject constructor(
 
 sealed interface RepoListUIState {
     data class SuccessState(val repoList: List<RepoDomainModel>) : RepoListUIState
-    object ErrorState : RepoListUIState
+    data class ErrorState(val message: String) : RepoListUIState
     object LoadingState : RepoListUIState
     object IdleState : RepoListUIState
 }

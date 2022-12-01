@@ -31,7 +31,7 @@ internal fun DetailsScreen(
     })
 
     when (val uiState = viewModel.uiState) {
-        is UserDetailsUIState.ErrorState -> ErrorScreen() { viewModel.action(UiAction.GetUserDetails(userName)) }
+        is UserDetailsUIState.ErrorState -> ErrorScreen(uiState.message) { viewModel.action(UiAction.GetUserDetails(userName)) }
         is UserDetailsUIState.IdleState -> {}
         is UserDetailsUIState.LoadingState -> LoadingScreen()
         is UserDetailsUIState.SuccessState -> UserDetails(user = uiState.user)

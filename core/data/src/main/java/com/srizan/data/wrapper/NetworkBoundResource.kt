@@ -4,7 +4,6 @@ import com.google.gson.JsonParser
 import com.srizan.domain.model.ApiResult
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.catch
 import kotlinx.coroutines.flow.flow
@@ -38,7 +37,7 @@ class NetworkBoundResource @Inject constructor() {
                     )
                 }
             }.catch { exception ->
-                delay(1)
+                exception.printStackTrace()
                 emit(ApiResult.Error(getExceptionMessage(exception), getExceptionCode(exception)))
             }
         }

@@ -43,7 +43,7 @@ internal fun ListScreen(
     onRepoItemClick: (String) -> Unit, viewModel: ListViewModel = hiltViewModel()
 ) {
     when (val uiState = viewModel.uiState) {
-        is RepoListUIState.ErrorState -> ErrorScreen { viewModel.action(UiAction.GetRepoList) }
+        is RepoListUIState.ErrorState -> ErrorScreen(uiState.message) { viewModel.action(UiAction.GetRepoList) }
         is RepoListUIState.IdleState -> {}
         is RepoListUIState.LoadingState -> LoadingScreen()
         is RepoListUIState.SuccessState -> RepoList(

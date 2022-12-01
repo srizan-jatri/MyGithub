@@ -30,7 +30,7 @@ class DetailsViewModel @Inject constructor(
         viewModelScope.launch {
             getUserDetailsUseCase.invoke(GetUserDetailsUseCase.Params(userName)).collect {
                 uiState = when (it) {
-                    is ApiResult.Error -> UserDetailsUIState.ErrorState
+                    is ApiResult.Error -> UserDetailsUIState.ErrorState(it.message)
                     is ApiResult.Loading -> UserDetailsUIState.LoadingState
                     is ApiResult.Success -> UserDetailsUIState.SuccessState(it.data)
                 }
@@ -41,7 +41,7 @@ class DetailsViewModel @Inject constructor(
 
 sealed interface UserDetailsUIState {
     data class SuccessState(val user: GitHubUserDomainModel) : UserDetailsUIState
-    object ErrorState : UserDetailsUIState
+    data class ErrorState(val message: String) : UserDetailsUIState
     object LoadingState : UserDetailsUIState
     object IdleState : UserDetailsUIState
 }
