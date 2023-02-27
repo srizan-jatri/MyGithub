@@ -1,0 +1,76 @@
+{
+  "project_info": {
+    "project_number": "586724187296",
+    "project_id": "remoteconfig-jatri",
+    "storage_bucket": "remoteconfig-jatri.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:586724187296:android:dc88a32b93cba86b743dc5",
+        "android_client_info": {
+          "package_name": "com.example.remoteconfig"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "586724187296-emh841s89h0kbd3r2aue4aqast0p1t1p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.remoteconfig",
+            "certificate_hash": "8fad56d97dcd99a8179c046946b8573101481f4a"
+          }
+        },
+        {
+          "client_id": "586724187296-s3siqo45on5n5gkcl4vegf89fc8aihse.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCswk5YdRDxjbYOrKEqtALjY0Mx2esoRKo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "586724187296-s3siqo45on5n5gkcl4vegf89fc8aihse.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:586724187296:android:9bf0f62e4451d23c743dc5",
+        "android_client_info": {
+          "package_name": "com.srizan.mygithub"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "586724187296-s3siqo45on5n5gkcl4vegf89fc8aihse.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCswk5YdRDxjbYOrKEqtALjY0Mx2esoRKo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "586724187296-s3siqo45on5n5gkcl4vegf89fc8aihse.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

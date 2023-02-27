@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "remoteconfig-jatri",
+  "private_key_id": "d7ad6e6fdd94390fb69cbf9fb62819eae02bc663",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCXYeMkEgFiico0\n36ubmhEUy8hXEddK3hOzW3jfWEvIhmFHBifK69n6YB7obCvHaNijr9MOo9kJfsxb\nMZJlH0DPe2E5H+J5KT3WUuV6Wg3Z87nUgFjKXUEGFg2Ykn9XFdbLDU0llGGAVQKs\nV3+VrP3k9EchC5FtvQGATTyeSEm/x+iAOp9iTeFcUC/obCjx5CmEZBhk5w290g9J\nVSom9lHYRAt9ou/r9DYbLZQh6XCMtIesTsdlRQuhneo3eylKXHh11Ijt4D2l7y9A\n9ZxdWIDgqQ1W4D0gFChF8X/qKEgjqOhEwoaBXbP4Jfy7DbaxbusYc0dmKCC5UWdq\njkAtCRMLAgMBAAECggEAD3/QN8M4LRSahWtZMKdHlG+A5ZlIB7xRHA4DhCqQJ8nK\nb/ErZdVcDgyFXZqlqNcNR0UbQOZ5tEUtOzEKIhxfEF87hxPCplEYqbb3E93giS4x\nGpbBgIanv63GWpa1Pv9XbJbCDVTx3qfVjDuxLmv12tk/5xw+GZQ+cRp3WGViV6ZB\nu8ggfUFKBff18nlvY+twX1IGIvYetvZfkKSnndwmpIPcxw2gMvMoqqUs38nz9Mr7\n4cihFmkK3eZ6/t3u8/5olOKNEHw8ku1GWCaDsj82KiZ9QCoWqPj7sZ0B08FpB7VF\nShMK1adCxtXrs5B8GaY7UvadZrxQktF3cJUR2oYn8QKBgQDSOEbCCa2qWtu9Q65P\nMcHuLVc3a4Zuafs/KWW9AuKvltHABOVfEedzQ+Aus2or7ZFk6Gy052M/vQdspEtf\n+ScjQGfdLEvKZOK+DK8r0MPg24Waeuz2s1ba7dSLpg9rzJmmJExD6o6rBWOzsTuN\n0yNEGMm0emrM/qGk+TX3c0Z6pwKBgQC4WW55kGmb1OTYzEpoYyntZ5fZYed2xM3J\n+00KnN/08Zz5ypltHphpfxnVQazUzsqY7knjhmxQ2tiJHytKlDpFScEkM2A3xNTY\nKQaUOvoX/o0nEHkBLTEbMI+ViypN6gJ6PDlVtwFhE2Pz+qEb5DwMlw1KE0af1mIm\nBIQQ4vbE/QKBgAUESsv+pyJVoMDXiKVjLpmcg2RTMJYZ+WD8f+0O0JIYK1FFzKOE\nLd3WVNdIeNQrizi5Qz7d9sRiona5RQM5UvHIa7IfiH+AANlAPD3zcXlAQ+P34wfQ\nJ9Z5roTWpa+Q5mnMm/VS96ylKEf1htJPo5vQa5/e/AWAXiMtv1f0bE4pAoGAELm8\ndjcN/d9w6+KNFa95jFqLwmNJltMAQMUWFlJpV1XcgiVJikbuWRP5CgotXhls9Dca\naRQ3G5bfcoFrchbEuqiYZ2pp3mVzUjFWsXgwXKDxuYubDupEvEzJmi3IJs2GcASq\nxwYVj/MsbGRe3aL1d8b0o7XgAHx45y4dtVKCRRkCgYEA0dLQWz6y4z+iK8k5YT2z\nv4nZrya4voZ3BmbulIf3HXKJyKrPpbZiI0gvKeQkb/nZQDHlpeMs8nVVtP6YoQ8P\n/k0wsL6BVsE3LjaQkIdnRxkDDpHNmoSd6yFiNgxqymfGrBeR9qqNFLPIlC/ugQft\n4viRMBYBBbjVMaef6vWnNlk=\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-s8fxi@remoteconfig-jatri.iam.gserviceaccount.com",
+  "client_id": "110822602787280922551",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-s8fxi%40remoteconfig-jatri.iam.gserviceaccount.com"
+}
