@@ -93,4 +93,7 @@ dependencies {
     implementation("io.coil-kt:coil:2.2.2")
     implementation("io.coil-kt:coil-compose:2.2.2")
 
+
+    testImplementation("junit:junit:4.13.2")
+
 }
